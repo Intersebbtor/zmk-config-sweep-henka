@@ -96,7 +96,7 @@
         compatible = "zmk,combos";   
         bt_combo {
             timeout-ms = <150>;
-            key-positions = <11 12 13 14>; // A, S, D, F 
+            key-positions = <10 11 12 13>; // A, S, D, F 
             bindings = <&tog BT_Control>;
         }; 
     };
