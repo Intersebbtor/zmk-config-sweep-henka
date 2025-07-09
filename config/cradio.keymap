@@ -98,7 +98,7 @@
 
         bt_combo {
             timeout-ms = <150>;
-            key-positions = <20 21 22 23>; // A, S, D, F 
+            key-positions = <20 21 22 23>; // Z, X, C, V
             bindings = <&tog BT_Control>;
         };
     };
