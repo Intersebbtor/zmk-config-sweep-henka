@@ -157,7 +157,8 @@
             >;
         };
 
-        Accelerated_Mouse_Test {
+        layer_5 {
+            label = "Accelerated_Mouse_Test"; 
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
