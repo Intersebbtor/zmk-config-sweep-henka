@@ -155,7 +155,7 @@
     &trans        &mkp MB4          &mmv MOVE_UP    &mkp MB5         &msc SCRL_UP      &kp LC(LA(LEFT))    &kp LC(LA(E))  &kp LC(LA(R))  &kp LC(LA(T))  &kp LC(LA(RIGHT))
     &kp LEFT_ALT  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MCLK         &kp LC(LA(RETURN))  &kp LC(LA(D))  &kp LC(LA(F))  &kp LC(LA(G))  &kp RETURN
     &mkp RCLK     &kp LC(UP_ARROW)  &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp LC(LA(Z))       &kp LC(LA(C))  &kp LC(LA(V))  &kp LC(LA(B))  &kp LA(LC(X))
-                                                &mo 5            &mkp LCLK         &trans              &trans
+                                                &mkp RCLK           &mkp LCLK         &trans              &trans
             >;
         };
 
