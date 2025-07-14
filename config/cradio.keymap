@@ -28,7 +28,7 @@
     //require-prior-idle-ms = <125>; 
 };
 
-&mmv {
+/*&mmv {
         time-to-max-speed-ms = <100>;
         acceleration-exponent = <2>;
 };
@@ -38,7 +38,7 @@
         time-to-max-speed-ms = <100>;
         acceleration-exponent = <2>;
 };
-
+*/
 / {
     behaviors {
         lslc: lslc {
