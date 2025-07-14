@@ -83,6 +83,7 @@
             label = "MOUSE_SCROLL_FAST";
             scroll_speed = <3>;
         };
+        };
     };
 
     macros {
