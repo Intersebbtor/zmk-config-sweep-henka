@@ -80,19 +80,6 @@
 
             //flavor = "hold-preferred";
         };
-        mmv_fast: mmv_fast {
-            compatible = "zmk,behavior-mouse-move";
-            #binding-cells = <1>;
-            label = "MOUSE_MOVE_FAST";
-            speed = <60>;
-        };
-
-        msc_fast: msc_fast {
-            compatible = "zmk,behavior-mouse-scroll";
-            #binding-cells = <1>;
-            label = "MOUSE_SCROLL_FAST";
-            scroll_speed = <3>;
-        };
     };
 
 
@@ -148,7 +135,7 @@
     &kp ESCAPE      &kp LG(ESCAPE)     &kp UP_ARROW     &kp LC(LA(LG(C)))     &kp TILDE                       &kp SQT            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
     &kp LEFT_GUI    &kp LEFT           &kp DOWN         &kp RIGHT             &kp LG(BACKSPACE)               &kp DOUBLE_QUOTES  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
     &kp LEFT_SHIFT  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp LS(LG(NUMBER_4))  &kp LA(LS(LC(LG(NUMBER_1))))    &kp GRAVE          &kp N7        &kp N8        &kp NUMBER_9  &kp EQUAL
-                                                    &mmv_fast MOVE_UP                &trans                          &kp DEL            &kp NUMBER_0
+                                                    &trans             &trans                          &kp DEL            &kp NUMBER_0
             >;
         };
 
@@ -179,16 +166,6 @@
     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &trans  &trans  &trans  &trans  &trans
     &trans        &trans        &trans        &trans        &kp A         &trans  &trans  &trans  &trans  &trans
                                             &trans        &trans        &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            label = "Accelerated Mouse";
-            bindings = <
-    &trans  &trans        &mmv_fast MOVE_UP     &trans           &msc_fast SCRL_UP     &trans  &trans  &trans  &trans  &trans
-&trans  &mmv_fast LEFT  &mmv_fast MOVE_DOWN  &mmv_fast RIGHT  &msc_fast SCRL_DOWN   &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &msc_fast SCRL_LEFT   &msc_fast SCRL_RIGHT  &msc_fast SCRL_DOWN &trans  &trans  &trans  &trans  &trans
-                        &trans              &trans              &trans              &trans
             >;
         };
     };
