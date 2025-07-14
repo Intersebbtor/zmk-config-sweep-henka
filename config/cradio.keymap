@@ -30,12 +30,13 @@
 
 &mmv {
         time-to-max-speed-ms = <50>;
-        acceleration-exponent = <2>;
+        acceleration-exponent = <4>;
 };
 
 
 &msc {
         time-to-max-speed-ms = <1>;
+        eacceleration-exponent = <4>;
 };
 
 / {
