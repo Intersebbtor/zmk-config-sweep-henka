@@ -181,5 +181,14 @@
                                             &trans        &trans        &trans  &trans
             >;
         };
+        layer_5 {
+            label = "Accelerated Mouse";
+            bindings = <
+    &trans  &trans        &mmv_fast MOVE_UP     &trans           &msc_fast SCRL_UP     &trans  &trans  &trans  &trans  &trans
+&trans  &mmv_fast LEFT  &mmv_fast MOVE_DOWN  &mmv_fast RIGHT  &msc_fast SCRL_DOWN   &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &msc_fast SCRL_LEFT   &msc_fast SCRL_RIGHT  &msc_fast SCRL_DOWN &trans  &trans  &trans  &trans  &trans
+                        &trans              &trans              &trans              &trans
+            >;
+        };
     };
 };
