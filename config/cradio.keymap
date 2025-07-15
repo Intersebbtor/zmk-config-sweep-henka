@@ -1,6 +1,7 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
-
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 50    // default: 10
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -30,12 +31,12 @@
 
 &mmv {
     time-to-max-speed-ms = <50>;
-    acceleration-exponent = <4>;
+    //acceleration-exponent = <4>;
 };
 
 &msc {
-    time-to-max-speed-ms = <1>;
-    acceleration-exponent = <4>;
+    time-to-max-speed-ms = <0>;
+    //acceleration-exponent = <4>;
 };
 
 / {
@@ -150,9 +151,9 @@
         layer_3 {
             label = "Magnet,Arc";
             bindings = <
-&trans        &mkp MB4          &mmv MOVE_UP     &mkp MB5          &msc MOVE_Y(-20)    &kp LC(LA(LEFT))    &kp LC(LA(E))  &kp LC(LA(R))  &kp LC(LA(T))  &kp LC(LA(RIGHT))
+&trans        &mkp MB4          &mmv MOVE_UP     &mkp MB5          &msc MOVE_Y(-50)    &kp LC(LA(LEFT))    &kp LC(LA(E))  &kp LC(LA(R))  &kp LC(LA(T))  &kp LC(LA(RIGHT))
 &kp LEFT_ALT  &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &mkp MCLK           &kp LC(LA(RETURN))  &kp LC(LA(D))  &kp LC(LA(F))  &kp LC(LA(G))  &kp RETURN
-&mkp RCLK     &kp LC(UP_ARROW)  &msc MOVE_X(10)  &msc MOVE_X(-10)  &msc MOVE_Y(20)     &kp LC(LA(Z))       &kp LC(LA(C))  &kp LC(LA(V))  &kp LC(LA(B))  &kp LA(LC(X))
+&mkp RCLK     &kp LC(UP_ARROW)  &msc MOVE_X(50)  &msc MOVE_X(-50)  &msc MOVE_Y(50)     &kp LC(LA(Z))       &kp LC(LA(C))  &kp LC(LA(V))  &kp LC(LA(B))  &kp LA(LC(X))
                                                  &mkp RCLK         &mkp LCLK           &trans              &trans
             >;
         };
