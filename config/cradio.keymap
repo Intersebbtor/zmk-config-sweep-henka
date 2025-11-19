@@ -136,9 +136,9 @@
         layer_1 {
             label = "Num,Arrow";
             bindings = <
-&kp ESCAPE      &kp LG(ESCAPE)     &kp UP_ARROW     &kp LC(LA(LG(C)))     &kp TILDE                       &kp SQT            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+&kp ESCAPE      &kp LG(ESCAPE)     &kp UP_ARROW     &kp LC(LA(LG(C)))     &kp A                       &kp SQT            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
 &kp LEFT_GUI    &kp LEFT           &kp DOWN         &kp RIGHT             &kp LG(BACKSPACE)               &kp DOUBLE_QUOTES  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&kp LEFT_SHIFT  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp LS(LG(NUMBER_4))  &kp LA(LS(LC(LG(NUMBER_1))))    &kp GRAVE          &kp N7        &kp N8        &kp NUMBER_9  &kp EQUAL
+&kp LEFT_SHIFT  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp LS(LG(NUMBER_4))  &kp LA(LS(LC(LG(NUMBER_1))))    &kp A          &kp N7        &kp N8        &kp NUMBER_9  &kp EQUAL
                                                     &trans                &trans                          &kp DEL            &kp NUMBER_0
             >;
         };
