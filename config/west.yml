@@ -4,6 +4,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: zzeneg
+      url-base: https://github.com/zzeneg
+    - name: srwi
+      url-base: https://github.com/srwi
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -11,5 +15,13 @@ manifest:
       remote: zmkfirmware
       revision: v0.2
       import: app/west.yml
+    # Raw HID transport (USB + BLE), needed by the layer notifier
+    - name: zmk-raw-hid
+      remote: zzeneg
+      revision: 6a37765dfab6197292e7a9f47305dcf87386d56a # main, 2026-08-23
+    # Sends live layer state over Raw HID (KeyPeek protocol)
+    - name: zmk-keypeek-layer-notifier
+      remote: srwi
+      revision: 23a9e46287e083a66d1d6f1939f68efb1f0f5295 # master, 2026-10-21
   self:
     path: config
