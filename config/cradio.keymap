@@ -156,8 +156,8 @@
             label = "Magnet + Misc";
             bindings = <
 &kp ESCAPE    &trans     &trans        &trans             &kp LS(LG(Y))    &kp LC(LA(LEFT))    &kp LC(LA(E))  &kp LC(LA(R))  &kp LC(LA(T))  &kp LC(LA(RIGHT))
-&kp LEFT_ALT  &trans     &trans        &kp LS(LG(K))      &tog 4           &kp LC(LA(RETURN))  &kp LC(LA(D))  &kp LC(LA(F))  &kp LC(LA(G))  &kp RETURN
-&trans        &kp MINUS  &kp LG(PLUS)  &kp LG(LA(LC(J)))  &trans           &kp LC(LA(Z))       &kp LC(LA(C))  &kp LC(LA(V))  &kp LC(LA(B))  &kp LA(LC(X))
+&kp LEFT_ALT  &kp LG(B) &trans        &kp LS(LG(K))      &tog 4           &kp LC(LA(RETURN))  &kp LC(LA(D))  &kp LC(LA(F))  &kp LC(LA(G))  &kp RETURN
+&trans        &kp LG(MINUS)  &kp LG(PLUS)  &kp LC(LG(BSLH))   &trans           &kp LC(LA(Z))       &kp LC(LA(C))  &kp LC(LA(V))  &kp LC(LA(B))  &kp LA(LC(X))
                                        &trans             &trans           &trans              &trans
             >;
         };
